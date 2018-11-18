@@ -1,0 +1,27 @@
+/* -----------------------------------------------------
+/* Variables
+/* - Includes Bootstrap variables and custom ones
+/* ----------------------------------------------------- */
+
+// Custom Font Variables
+$effra: 'effra', sans-serif;
+$ff-tisa: 'ff-tisa-sans-web-pro', sans-serif;
+
+// Site Colors
+$jt-yellow: #FFED78;
+$jt-green: #60BFBA;
+$jt-dark-grey: #393939;
+$jt-black: #282828;
+
+@mixin triangle (
+  $width: 25px,
+  $height: 15px,
+  $rotate: 180deg,
+  $strokeWidth: 10px) {
+  content: '';
+  position: absolute;
+  width: $width;
+  height: $height;
+  @include transform(rotate($rotate));
+  background: url('data:image/svg+xml;utf8, <svg viewBox="0 0 66 39" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M596.968 129l32.97 38.78H564z"/><mask id="b" x="0" y="0" width="65.937" height="38.779" fill="#fff"><use xlink:href="#a"/></mask></defs><use mask="url(#b)" xlink:href="#a" transform="translate(-564 -129)" stroke-width="#{$strokeWidth}" stroke="#282828" fill="#FFED78" fill-rule="evenodd"/></svg>');
+}

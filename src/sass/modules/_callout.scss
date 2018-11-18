@@ -1,0 +1,58 @@
+/* -----------------------------------------------------
+/* Callout
+/* ----------------------------------------------------- */
+.city__content {
+	position: relative;
+
+	svg {
+		height: 903px;
+		position: absolute;
+		margin-left: -1150px;
+		z-index: -2;
+		left: percentage(1150/2300);
+	}
+}
+
+.callout {
+	margin-bottom: 75px;
+}
+
+.callout__box {
+	background: $jt-yellow;
+	border: 6px solid $jt-black;
+	padding: rem(20);
+	margin-bottom: rem(40);
+
+	h1 {
+		margin: 0;
+		font-weight: 900;
+		text-align: center;
+
+		.tk-effra {
+			font-size: rem(54);
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		.tk-proxima-nova {
+			display: inline;
+			font-weight: 100;
+			font-size: rem(48);
+		}
+
+		.tk-ff-tisa-web-pro {
+			display: inline;
+			font-size: rem(48);
+		}
+	}
+}
+
+.callout__desc {
+	font-size: rem(24);
+	color: #fff;
+	text-align: center;
+
+	p {
+		margin: 0;
+	}
+}

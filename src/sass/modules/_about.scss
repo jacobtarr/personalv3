@@ -1,0 +1,64 @@
+/* -----------------------------------------------------
+/* About
+/* ----------------------------------------------------- */
+.about {
+	background: #fff;
+}
+
+.about__subsection {
+	+ .about__subsection {
+		margin-top: 70px;
+	}
+}
+
+.features {
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+.feature-title {
+	margin-top: 13px;
+	font-weight: 500;
+}
+
+.feature-desc {
+	margin-top: 13px;
+	margin-bottom: 0;
+}
+
+.skills {
+	max-width: 730px;
+	margin: 0 auto;
+}
+
+.skill {
+	+ .skill {
+		margin-top: 30px;
+	}
+}
+
+.skill__name {
+	font-weight: 500;
+	font-family: $effra;
+	font-size: rem(22);
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.skill__rating {
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+}
+
+.rating-circle {
+	border: 3px solid $jt-black;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #fff;
+
+	&.filled {
+		background: $jt-yellow;
+	}
+}

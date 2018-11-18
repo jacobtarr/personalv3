@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* -----------------------------------------------------
+/*
+/* Table of Contents -- SMACSS
+/* [1] Vendor 	- External styles dependent on other
+/*				  plugins or mixin libraries; Bower components
+/* [2] Base     - All default styling for the app (like type and basic
+/*				  layout)
+/* [3] Layout   - General components of a website, such as the header
+/*				  or footer
+/* [4] Modules  - Specific components of a website,
+/*				  such as a callout or a carousel
+/* [5] Theme    - Responsive and theme overrides
+/*
+/* ----------------------------------------------------- */
+
+/* [1] Vendor */
+@import 'base/variables'; // Needs to be called before bootstrap
+@import '~font-awesome/scss/font-awesome';
+@import "~bootstrap/scss/bootstrap";
+
+
+/* [2] Base */
+@import 'base/animate';
+@import 'base/base';
+@import 'base/type';
+@import 'base/mixins';
+
+/* [3] Layout */
+@import 'layout/header';
+@import 'layout/content';
+
+
+/* [4] Modules */
+@import 'modules/callout';
+@import 'modules/about';
+
+/* [5] Theme */
