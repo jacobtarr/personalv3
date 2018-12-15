@@ -38,7 +38,10 @@ gulp.task('init-watch', () => {
         },
         open: false,
         injectChanges: true,
-        notify: false
+        notify: false,
+        ghostMode: {
+          scroll: true
+        }
     })
     $.watch('src/sass/**/*.scss', () => gulp.start('sass'))
     $.watch('src/js/**/*.js', () => gulp.start('js-watch'))
@@ -140,6 +143,12 @@ gulp.task('js-watch', ['js'], (cb) => {
 
 gulp.task('js', () => {
     return gulp.src([
+        'node_modules/jquery/dist/jquery.js',
+        'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
+        'node_modules/wowjs/dist/wow.js',
+        'node_modules/@fortawesome/fontawesome-free/js/all.js',
+        'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/velocity-animate/velocity.js',
         'src/js/**/*.js'
     ])
     .pipe($.plumber({ errorHandler: onError }))

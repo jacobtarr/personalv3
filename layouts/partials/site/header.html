@@ -1,36 +1,63 @@
-<div id="navbar-wrapper" class="navbar navbar-dark bg-inverse navbar-fixed-left">
+<nav id="navbar-wrapper" class="navbar navbar-dark bg-inverse navbar-expand-xl navbar-fixed-left">
   <div class="navbar-header">
-    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#jtNavbar" aria-controls="jtNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="navbar-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
     <a class="navbar-brand" href="#">
       {{ partial "svgs/site-logo.html" . }}
-    <a class="navbar-brand__title" href="">Jacob Tarr</a>
+      <a class="navbar-brand__title" href="">Jacob Tarr</a>
     </a>
   </div>
-  <div class="navbar__menu navbar-toggleable-md collapse" id="navbar">
+
+
+  <div class="collapse navbar-collapse" id="jtNavbar">
     <ul class="nav navbar-nav">
       <li>
-        <a href="#contact"><span>Home</span><i class="fa fa-angle-right"></i></a>
+        <a href="#about"><span>About</span>
+          <div class="nav-arrow">
+            {{ partial "svgs/icon-arrow.html" . }}
+          </div>
+        </a>
       </li>
       <li>
-        <a href="#contact"><span>About</span><i class="fa fa-angle-right"></i></a>
+        <a href="#process"><span>Process</span>
+          <div class="nav-arrow">
+            {{ partial "svgs/icon-arrow.html" . }}
+          </div>
+        </a>
       </li>
       <li>
-        <a href="#contact"><span>Work</span><i class="fa fa-angle-right"></i></a>
+        <a href="#work"><span>Work</span>
+          <div class="nav-arrow">
+            {{ partial "svgs/icon-arrow.html" . }}
+          </div>
+        </a>
       </li>
       <li>
-        <a href="#contact"><span>Process</span><i class="fa fa-angle-right"></i></a>
-      </li>
-      <li>
-        <a href="#contact"><span>Contact</span><i class="fa fa-angle-right"></i></a>
+        <a href="#contact"><span>Contact</span>
+          <div class="nav-arrow">
+            {{ partial "svgs/icon-arrow.html" . }}
+          </div>
+        </a>
       </li>
     </ul>
-
   </div>
-  <!--/.navbar-collapse -->
+
   <div class="navbar__footer">
     <div class="navbar__social-links">
       <a class="navbar__social-link" href="#">
-        <i class="fas fa-behance"></i>
+        <i class="fab fa-behance"></i>
+      </a>
+      <a class="navbar__social-link" href="#">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a class="navbar__social-link" href="#">
+        <i class="fab fa-twitter"></i>
       </a>
     </div>
     <div class="navbar__copyright-wrapper">
@@ -40,4 +67,4 @@
       </script>
     </div>
   </div>
-</div>
+</nav>

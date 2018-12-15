@@ -1,0 +1,256 @@
+{{ define "main" }}
+
+<section class="city">
+  <div class="city__content">
+    {{ partial "svgs/city-akron.html" . }}
+  </div>
+</section>
+<div class="content-wrapper">
+  <section class="callout">
+    <div class="callout__content content-spacer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-24">
+            <div class="callout-box">
+              <h1 class="callout-box__top">
+                <div class="callout-box__top-mobile d-sm-block d-md-none">
+                  Hi! My name is Jacob Tarr. I design and build Websites.
+                </div>
+                <div class="callout-box__top-desktop d-none d-md-block">
+                  <div class="tk-effra">Hi! My name is Jacob Tarr.</div>
+                  <div class="tk-ff-tisa-sans-web-pro font-weight-normal">I design</div>
+                  <div class="tk-ff-tisa-sans-web-pro font-weight-bold font-italic text-lowercase">and </div>
+                  <div class="tk-ff-tisa-sans-web-pro font-weight-normal">build </div>
+                  <div class="tk-ff-tisa-sans-web-pro font-weight-bold">Websites.</div>
+                </div>
+              </h1>
+              <div class="content-divider">
+                {{ partial "svgs/icon-big-divider.html" . }}
+              </div>
+              <div class="callout-box__bottom">
+                <p>I’m passionate about helping businesses and individuals grow their brand through the web in the Akron area or wherever you may be on Earth. Let's get in touch!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about content-section">
+    {{ partial "homepage/about.html" . }}
+  </section>
+  <section id="process" class="process content-section">
+    {{ partial "homepage/process.html" }}
+  </section>
+  <section id="work" class="work content-section">
+    <div class="content-title">Work</div>
+    <div class="content-spacer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-24">
+            <div class="content-intro">
+              <p class="m-0">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
+                odio sem nec elit. Cras justo odio, dapibus ac facilisis in. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in.</p>
+            </div>
+            <div class="content-section__subsection">
+               <div class="work-carousels">
+                 <div class="work-thumbnail-carousel">
+                   <div class="work-thumbnail-col">
+                     <div class="work-thumbnail">
+                       <img src="/images/work-thumbnail-lemur.png" alt="">
+                       <div class="bordered-triangle"></div>
+                     </div>
+                   </div>
+                   <div class="work-thumbnail-col">
+                     <div class="work-thumbnail">
+                       <img src="/images/work-thumbnail-personal-v2.png" alt="">
+                       <div class="bordered-triangle"></div>
+                     </div>
+                   </div>
+                   <div class="work-thumbnail-col">
+                     <div class="work-thumbnail">
+                       <img src="/images/work-thumbnail-vivid.png" alt="">
+                       <div class="bordered-triangle"></div>
+                     </div>
+                   </div>
+                   <div class="work-thumbnail-col">
+                     <div class="work-thumbnail">
+                       <img src="/images/work-thumbnail-greg-mauz.png" alt="">
+                       <div class="bordered-triangle"></div>
+                     </div>
+                   </div>
+                   <div class="work-thumbnail-col">
+                     <div class="work-thumbnail">
+                       <img src="/images/work-thumbnail-syllabus.png" alt="">
+                       <div class="bordered-triangle"></div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="work-main-carousel">
+                   <div class="work-main-slide">
+                     <div class="work-main-slide__img">
+                       <img src="/images/screenshot-lemur.png" alt="">
+                     </div>
+                     <div class="work-main-slide__info">
+                       <div class="work-main-slide__title">
+                         <h5>Lemur</h5>
+                       </div>
+                       <p class="work-main-slide__desc">
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio iste commodi ipsum, laborum, mollitia quod. Nostrum minima, dolorem recusandae. Nesciunt quaerat neque officiis deleniti blanditiis.
+                       </p>
+                       <div class="work-main-slide__links">
+                         <a class="btn btn--jt" href="#">
+                           <i class="fas fa-globe"></i>
+                           <span>Website</span>
+                         </a>
+                         <a class="btn btn--jt" href="#">
+                           <i class="fab fa-github"></i>
+                           <span>Github</span>
+                         </a>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="work-main-slide">
+                     <div class="work-main-slide__img">
+                       <img src="/images/screenshot-personal-v2.png" alt="">
+                     </div>
+                     <div class="work-main-slide__info">
+                       <div class="work-main-slide__title">
+                         <h5>Lemur</h5>
+                       </div>
+                       <p class="work-main-slide__desc">
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio iste commodi ipsum, laborum, mollitia quod. Nostrum minima, dolorem recusandae. Nesciunt quaerat neque officiis deleniti blanditiis.
+                       </p>
+                       <div class="work-main-slide__links">
+                         <a class="btn btn--jt" href="#">
+                           <i class="fas fa-globe"></i>
+                           <span>Website</span>
+                         </a>
+                         <a class="btn btn--jt" href="#">
+                           <i class="fab fa-github"></i>
+                           <span>Github</span>
+                         </a>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="work-main-slide">
+                     <div class="work-main-slide__img">
+                       <img src="/images/screenshot-vivid.png" alt="">
+                     </div>
+                     <div class="work-main-slide__info">
+                       <div class="work-main-slide__title">
+                         <h5>Lemur</h5>
+                       </div>
+                       <p class="work-main-slide__desc">
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio iste commodi ipsum, laborum, mollitia quod. Nostrum minima, dolorem recusandae. Nesciunt quaerat neque officiis deleniti blanditiis.
+                       </p>
+                       <div class="work-main-slide__links">
+                         <a class="btn btn--jt" href="#">
+                           <i class="fas fa-globe"></i>
+                           <span>Website</span>
+                         </a>
+                         <a class="btn btn--jt" href="#">
+                           <i class="fab fa-github"></i>
+                           <span>Github</span>
+                         </a>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="work-main-slide">
+                     <div class="work-main-slide__img">
+                       <img src="/images/screenshot-gregmauz.png" alt="">
+                     </div>
+                     <div class="work-main-slide__info">
+                       <div class="work-main-slide__title">
+                         <h5>Lemur</h5>
+                       </div>
+                       <p class="work-main-slide__desc">
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio iste commodi ipsum, laborum, mollitia quod. Nostrum minima, dolorem recusandae. Nesciunt quaerat neque officiis deleniti blanditiis.
+                       </p>
+                       <div class="work-main-slide__links">
+                         <a class="btn btn--jt" href="#">
+                           <i class="fas fa-globe"></i>
+                           <span>Website</span>
+                         </a>
+                         <a class="btn btn--jt" href="#">
+                           <i class="fab fa-github"></i>
+                           <span>Github</span>
+                         </a>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="work-main-slide">
+                     <div class="work-main-slide__img">
+                       <img src="/images/screenshot-syllabus.png" alt="">
+                     </div>
+                     <div class="work-main-slide__info">
+                       <div class="work-main-slide__title">
+                         <h5>Lemur</h5>
+                       </div>
+                       <p class="work-main-slide__desc">
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio iste commodi ipsum, laborum, mollitia quod. Nostrum minima, dolorem recusandae. Nesciunt quaerat neque officiis deleniti blanditiis.
+                       </p>
+                       <div class="work-main-slide__links">
+                         <a class="btn btn--jt" href="#">
+                           <i class="fas fa-globe"></i>
+                           <span>Website</span>
+                         </a>
+                         <a class="btn btn--jt" href="#">
+                           <i class="fab fa-github"></i>
+                           <span>Github</span>
+                         </a>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact content-section">
+    <div class="content-title">Contact</div>
+    <div class="content-spacer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-24">
+            <div class="content-intro">
+              <p class="m-0">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
+                odio sem nec elit. Cras justo odio, dapibus ac facilisis in. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in.</p>
+            </div>
+            <div class="content-section__subsection">
+              <form class="contact-form" action="https://formspree.io/jtarr523@gmail.com" method="POST">
+                <div class="form-group input-group">
+                  <div class="input-group__icon">
+                    <i class="far fa-user"></i>
+                  </div>
+                  <input type="text" name="name" class="form-control" id="contactName" placeholder="Name">
+                </div>
+                <div class="form-group input-group">
+                  <div class="input-group__icon">
+                    <i class="far fa-envelope"></i>
+                  </div>
+                  <input type="text" name="name" class="form-control" id="contactEmail" placeholder="Email">
+                </div>
+                <div class="form-group textarea-group">
+                  <div class="textarea-group__header">
+                    <i class="far fa-comment"></i>
+                    <span>Message</span>
+                  </div>
+                  <textarea id="contactMessage" name="name" class="form-control" placeholder="Type your message..."></textarea>
+                </div>
+                <button type="submit" class="btn btn--jt">Let's Talk!</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+{{ end }}

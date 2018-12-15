@@ -5,24 +5,70 @@
 	background: #fff;
 }
 
-.about__subsection {
-	+ .about__subsection {
+.content-section__subsection {
+	+ .content-section__subsection {
 		margin-top: 70px;
+	}
+}
+
+.bordered-triangle {
+	&--top-row-process {
+		bottom: auto;
+		top: 75px;
+		left: auto;
+		right: -80px; // Need to fix!
+		transform: scale(2) rotate(-90deg);
+		margin-top: -9px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	&--bottom-row-process {
+		bottom: auto;
+		top: -80px;
+		left: 50%;
+		transform: scale(2);
+		margin-top: -9px;
+		margin-left: -15.5px;
+	}
+}
+
+.feature {
+	position: relative;
+	&--finishing-touches {
+		.feature-icon {
+			max-width: 500px;
+			> img {
+				width: 100%;
+			}
+		}
+		.feature-title {
+			// font-size: 28px;
+			@include rfs(28);
+		}
 	}
 }
 
 .features {
 	max-width: 850px;
 	margin: 0 auto;
+	position: relative;
+}
+
+.feature-icon {
+	margin: auto;
+	max-width: 170px;
 }
 
 .feature-title {
-	margin-top: 13px;
+	margin-top: 15px;
+	margin-bottom: 10px;
 	font-weight: 500;
+	//font-size: 22px;
+	@include rfs(22);
 }
 
 .feature-desc {
-	margin-top: 13px;
+	margin-top: 0;
 	margin-bottom: 0;
 }
 
@@ -40,7 +86,8 @@
 .skill__name {
 	font-weight: 500;
 	font-family: $effra;
-	font-size: rem(22);
+	//font-size: 20px;
+	@include rfs(20);
 	text-transform: uppercase;
 	text-align: left;
 }
@@ -48,7 +95,8 @@
 .skill__rating {
 	text-align: left;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .rating-circle {
@@ -57,8 +105,84 @@
 	height: 25px;
 	border-radius: 50%;
 	background: #fff;
-
+	+ .rating-circle {
+		margin-left: 10px;
+	}
 	&.filled {
 		background: $jt-yellow;
 	}
+}
+
+.features__top-row {
+	margin-bottom: 160px;
+}
+
+@include media-breakpoint-down(lg) {
+
+	.feature-icon {
+		max-width: 150px;
+	}
+
+}
+
+@include media-breakpoint-down(md) {
+
+	.rating-circle {
+		border: 2px solid $jt-black;
+		width: 20px;
+		height: 20px;
+		+ .rating-circle {
+			margin-left: 8px;
+		}
+	}
+
+}
+
+@include media-breakpoint-down(sm) {
+
+	.feature {
+		display: flex;
+		align-items: center;
+		+ .feature {
+			margin-top: 30px;
+		}
+	}
+
+	.feature-icon {
+		max-width: 120px;
+		width: 100%;
+	}
+
+	.feature-info {
+		margin-left: 15px;
+		text-align: left;
+	}
+
+	.feature-title {
+		margin-top: 0;
+		margin-bottom: 3px;
+		br {
+			display: none;
+		}
+	}
+
+	.bordered-triangle {
+		&--top-row-process {
+			display: none;
+		}
+	}
+
+}
+
+@include media-breakpoint-down(xs) {
+
+	.skill__name {
+		margin-bottom: 2px;
+		text-align: center;
+	}
+
+	.skill__rating {
+		justify-content: center;
+	}
+
 }

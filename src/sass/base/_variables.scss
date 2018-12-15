@@ -11,7 +11,10 @@ $ff-tisa: 'ff-tisa-sans-web-pro', sans-serif;
 $jt-yellow: #FFED78;
 $jt-green: #60BFBA;
 $jt-dark-grey: #393939;
-$jt-black: #282828;
+$jt-black: #111;
+
+// Bootstrap variables
+$grid-columns: 24 !default;
 
 @mixin triangle (
   $width: 25px,

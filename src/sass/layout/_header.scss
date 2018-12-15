@@ -3,61 +3,74 @@
 /* ----------------------------------------------------- */
 #navbar-wrapper {
 	border: 0;
+	@include justify-content(center);
 }
 
 .navbar-fixed-left {
-	min-width: 240px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 220px;
+	width: 220px;
 	border-radius: 0;
 	text-align: center;
 	height: 100vh;
-	z-index: 20;
-	background: $jt-dark-grey;
+	z-index: 200;
+	background: rgba($jt-dark-grey, 1);
+	@include flex-wrap(wrap);
+	@include align-content(flex-start);
+	padding: 45px 25px;
 }
 
 .navbar-nav {
 	text-align: left;
-	float: none;
 	display: block;
 	width: 100%;
 	margin-top: 60px;
-	padding: 0 25px;
+	padding: 0;
 }
 
 .navbar-nav > li {
-	float: none;
-	/* Cancel default li float: left */
 	display: block;
 	position: relative;
-	margin-bottom: 30px;
-
+	+ li {
+		margin-top: 30px;
+	}
 	> a {
 		color: #fff;
 		font-family: $effra;
 		font-weight: 400;
 		padding: 0;
 		letter-spacing: 2.5px;
-		font-size: 18px;
+		//font-size: 16px;
+		@include rfs(16);
 		text-transform: uppercase;
-
-		&:focus,
 		&:hover {
 			color: $jt-yellow;
-
-			.fa {
-				opacity: 1;
-				right: 0;
-				transition: all 0.2s linear;
+			.nav-arrow {
+				svg {
+					opacity: 1;
+					right: 0;
+					transition: all 0.2s linear;
+					path {
+						fill: $jt-yellow;
+					}
+				}
 			}
 		}
-
-		.fa {
-			transition: all 0.2s linear;
-			opacity: 0;
-			//@include foobar();
-			transform: scale(1.3);
-			position: absolute;
-			right: 70px;
-			color: $jt-yellow;
+		.nav-arrow {
+			svg {
+				height: 22px;
+				transition: all 0.2s linear;
+				opacity: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				position: absolute;
+				right: 70px;
+				path {
+					fill: #fff;
+				}
+			}
 		}
 	}
 }
@@ -67,14 +80,11 @@
 }
 
 .navbar-header {
-	float: none;
-	padding: 45px 25px 0;
 }
 
 .navbar-brand {
-	display: block;
-	float: none;
-
+	padding: 0;
+	margin-right: 0;
 	svg {
 		width: 86px;
 		margin-bottom: 15px;
@@ -84,8 +94,9 @@
 .navbar-brand__title {
 	display: block;
 	font-family: $effra;
-	font-family: 400;
-	font-size: 20px;
+	font-weight: 400;
+	//font-size: 20px;
+	@include rfs(20);
 	letter-spacing: 2.5px;
 	text-transform: uppercase;
 	color: #fff;
@@ -115,7 +126,8 @@
 	border-radius: 50%;
 	margin: 0 5px;
 	line-height: 40px;
-	font-size: 18px;
+	//font-size: 18px;
+	@include rfs(18);
 	color: $jt-dark-grey;
 
 	&:focus,
@@ -131,3 +143,129 @@
 	background: $jt-black;
 }
 /* Header Animations */
+
+
+@include media-breakpoint-down(lg) {
+
+	.navbar-fixed-left {
+		position: fixed;
+		height: auto;
+		min-width: 100%;
+		width: 100%;
+		padding: 0;
+	}
+
+	.navbar-nav {
+		margin-top: 0;
+		border-top: 2px solid #555;
+		padding: 15px;
+		text-align: right;
+		> li {
+			+ li {
+				margin-top: 15px;
+			}
+			> a {
+				font-size: 18px;
+			}
+		}
+	}
+
+	.nav-arrow {
+		svg {
+			display: none;
+		}
+	}
+
+	.navbar-toggler {
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+		background: none;
+		padding: 0;
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.navbar-icon {
+		width: 30px;
+	  height: 20px;
+	  position: relative;
+	  transform: rotate(0deg);
+	  transition: .5s ease-in-out;
+	  cursor: pointer;
+		span {
+			display: block;
+		  position: absolute;
+		  height: 2px;
+		  width: 100%;
+		  background: #fff;
+		  border-radius: 2px;
+		  opacity: 1;
+		  left: 0;
+		  transform: rotate(0deg);
+		  transition: .25s ease-in-out;
+		}
+	}
+
+	.navbar-icon span:nth-child(1) {
+		top: 0;
+	}
+
+	.navbar-icon span:nth-child(2),
+	.navbar-icon span:nth-child(3) {
+		top: 9px;
+	}
+
+	.navbar-icon span:nth-child(4) {
+		top: 18px;
+	}
+
+	.navbar-icon.open span:nth-child(1) {
+		top: 18px;
+		width: 0;
+		left: 50%;
+	}
+
+	.navbar-icon.open span:nth-child(2) {
+		transform: rotate(45deg);
+	}
+
+	.navbar-icon.open span:nth-child(3) {
+		transform: rotate(-45deg);
+	}
+
+	.navbar-icon.open span:nth-child(4) {
+		top: 18px;
+		width: 0;
+		left: 50%;
+	}
+
+	.navbar-header {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		width: 100%;
+		height: 60px;
+		padding: 0 15px;
+	}
+
+	.navbar-brand {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		svg {
+			margin: 0;
+			width: 48px;
+		}
+	}
+
+	.navbar-brand__title {
+		display: none;
+	}
+
+	.navbar__footer {
+		display: none;
+	}
+
+}

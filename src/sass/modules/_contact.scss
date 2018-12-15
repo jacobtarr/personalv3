@@ -1,0 +1,23 @@
+/* -----------------------------------------------------
+/* Contact
+/* ----------------------------------------------------- */
+
+.contact {
+  &.content-section {
+    margin-bottom: 100px;
+  }
+}
+
+.contact-form {
+  max-width: 360px;
+  width: 100%;
+  margin: auto;
+  text-align: right;
+  .form-group {
+    margin: 0 0 20px 0;
+  }
+  .btn--jt {
+    width: 100%;
+    @include rfs(20);
+  }
+}
