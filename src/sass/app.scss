@@ -17,13 +17,13 @@
 
 /* [1] Vendor */
 @import 'base/variables'; // Needs to be called before bootstrap
-@import '~slick-carousel/slick/slick.scss';
-@import '~slick-carousel/slick/slick-theme.scss';
+@import 'node_modules/slick-carousel/slick/slick.scss';
+@import 'node_modules/slick-carousel/slick/slick-theme.scss';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '~@fortawesome/fontawesome-free/scss/regular.scss';
 @import '~@fortawesome/fontawesome-free/scss/solid.scss';
 @import '~@fortawesome/fontawesome-free/scss/brands.scss';
-@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/scss/bootstrap';
 
 /* [2] Base */
 @import 'base/rfs';
