@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: jacobtarr/personalv3
+  name: git-gateway
   branch: master
 
 media_folder: "static/uploads"
