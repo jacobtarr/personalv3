@@ -39,6 +39,9 @@
       "@babel/env"
     ]
   },
+  "sass": {
+    "includePaths": ["./node_modules"]
+  },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.6.1",
     "bootstrap": "^4.1.3",
