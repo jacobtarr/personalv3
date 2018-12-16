@@ -27,7 +27,6 @@
     "gulp-plumber": "^1.1.0",
     "gulp-print": "^2.0.1",
     "gulp-sass": "^4.0.2",
-    "gulp-sass-lint": "^1.4.0",
     "gulp-size": "^2.1.0",
     "gulp-uglify": "^3.0.1",
     "gulp-watch": "^4.3.11",
