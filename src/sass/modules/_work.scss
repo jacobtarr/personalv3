@@ -225,10 +225,17 @@
 
   .work-main-slide__img {
     margin-right: 0;
+    + .work-main-slide__info {
+      margin-top: 20px;
+    }
   }
 
   .work-thumbnail-col {
     height: 170px;
+  }
+
+  .work-main-slide__desc {
+    margin-bottom: 25px;
   }
 
 }
@@ -237,6 +244,17 @@
 
   .work-thumbnail-carousel {
     max-width: 140px;
+  }
+
+  .work-main-slide__links {
+    flex-wrap: wrap;
+    > .btn {
+      width: 100%;
+      + .btn {
+        margin-left: 0;
+        margin-top: 15px;
+      }
+    }
   }
 
 }

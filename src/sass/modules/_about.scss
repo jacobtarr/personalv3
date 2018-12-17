@@ -119,6 +119,10 @@
 
 @include media-breakpoint-down(lg) {
 
+	.features__top-row {
+		margin-bottom: 120px;
+	}
+
 	.feature-icon {
 		max-width: 150px;
 	}
@@ -169,6 +173,9 @@
 	.bordered-triangle {
 		&--top-row-process {
 			display: none;
+		}
+		&--bottom-row-process {
+			top: -60px;
 		}
 	}
 

@@ -91,3 +91,11 @@
 .form-control {
   color: $jt-black;
 }
+
+@include media-breakpoint-down(sm) {
+
+  .btn--jt {
+    border: 2px solid $jt-black;
+  }
+
+}
