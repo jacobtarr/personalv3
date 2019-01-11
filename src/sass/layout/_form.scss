@@ -90,12 +90,27 @@
 
 .form-control {
   color: $jt-black;
+  @include rfs(16);
 }
 
 @include media-breakpoint-down(sm) {
 
   .btn--jt {
     border: 2px solid $jt-black;
+  }
+
+  .input-group {
+    border: 2px solid $jt-black;
+    .input-group__icon {
+      border-right: 2px solid $jt-black;
+    }
+  }
+
+  .textarea-group {
+    border: 2px solid $jt-black;
+    &__header {
+      border-bottom: 2px solid $jt-black;
+    }
   }
 
 }

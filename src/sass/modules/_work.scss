@@ -54,7 +54,7 @@
   height: 240px;
 }
 
-.slick-slide.active-state {
+.slick-slide.slick-current {
   .work-thumbnail {
     img {
       filter: none;
@@ -140,14 +140,14 @@
 
 .work-main-slide__title {
   user-select: text;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
+  padding-bottom: 8px;
+  margin-bottom: 13px;
   border-bottom: 3px solid $jt-black;
   h5 {
     font-weight: 500;
     line-height: 1;
     //font-size: 30px;
-    @include rfs(30);
+    @include rfs(24);
     text-transform: uppercase;
     margin: 0;
   }

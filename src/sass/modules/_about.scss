@@ -24,7 +24,7 @@
 	}
 	&--bottom-row-process {
 		bottom: auto;
-		top: -80px;
+		top: -65px;
 		left: 50%;
 		transform: scale(2);
 		margin-top: -9px;
@@ -43,7 +43,7 @@
 		}
 		.feature-title {
 			// font-size: 28px;
-			@include rfs(28);
+			@include rfs(22);
 		}
 	}
 }
@@ -114,7 +114,7 @@
 }
 
 .features__top-row {
-	margin-bottom: 160px;
+	margin-bottom: 140px;
 }
 
 @include media-breakpoint-down(lg) {

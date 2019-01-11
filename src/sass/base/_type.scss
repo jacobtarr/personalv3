@@ -7,3 +7,12 @@ h1, h2, h3, h4, h5, h6,
 	text-transform: uppercase;
 	font-family: $effra;
 }
+
+@include media-breakpoint-down(sm) {
+
+	p {
+		line-height: 1.35 !important;
+		font-size: 16px;
+	}
+
+}

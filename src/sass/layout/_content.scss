@@ -23,9 +23,9 @@
 	border-top: 5px solid $jt-black;
 	border-bottom: 5px solid $jt-black;
 	//font-size: 36px;
-	@include rfs(36);
+	@include rfs(30);
 	text-transform: uppercase;
-	font-weight: 500;
+	font-weight: 700;
 	padding: 20px;
 	position: relative;
 	&::after,
@@ -54,14 +54,14 @@
 
 .content-intro {
 	//font-size: 20px;
-	@include rfs(20);
+	@include rfs(18);
 	margin-bottom: 50px;
 }
 
 .content-subtitle {
 	//font-size: 28px;
-	@include rfs(28);
-	font-weight: 700;
+	@include rfs(24);
+	font-weight: 500;
 	margin-bottom: 55px;
 	position: relative;
 }
@@ -141,6 +141,12 @@
 
 	.content-intro {
 		margin-bottom: 35px;
+	}
+
+	.content-divider {
+		svg {
+			transform: scale(0.8);
+		}
 	}
 
 }

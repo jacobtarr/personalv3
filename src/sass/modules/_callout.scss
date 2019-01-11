@@ -18,7 +18,7 @@
 }
 
 .callout {
-	padding-bottom: 75px;
+	padding-bottom: 30px;
 	background: $jt-green;
 }
 
@@ -27,7 +27,8 @@
 	border: 5px solid $jt-black;
 	padding: 25px;
 	position: relative;
-	margin-bottom: 40px;
+	margin: 0 auto 60px auto;
+	max-width: 800px;
 	&::after,
 	&::before {
 		content: '';
@@ -59,27 +60,39 @@
 	font-weight: 900;
 	text-align: center;
 	.tk-effra {
-		@include rfs(54);
+		@include rfs(50);
 		display: block;
 	}
 	.tk-ff-tisa-sans-web-pro {
 		display: inline;
 		font-weight: 100;
-		@include rfs(48);
+		@include rfs(44);
 	}
 	.tk-ff-tisa-web-pro {
 		display: inline;
-		@include rfs(48);
+		@include rfs(44);
 	}
 }
 
 .callout-box__bottom {
-	@include rfs(22);
+	@include rfs(20);
 	text-align: center;
 	font-family: $ff-tisa;
-	font-style: italic;
 	p {
 		margin: 0;
+	}
+}
+
+.callout-photo {
+	width: 170px;
+	height: 170px;
+	border: 3px solid $jt-black;
+	border-radius: 50%;
+	margin: auto;
+	> img {
+		width: 100%;
+		border-radius: 50%;
+		object-fit: cover;
 	}
 }
 
@@ -100,7 +113,7 @@
 @include media-breakpoint-down(sm) {
 
 	.city {
-		height: 190px;
+		height: 15px;
 	}
 
 	.city__content {
@@ -139,9 +152,8 @@
 
 	.callout-box__top {
 		line-height: 1.1;
-		font-size: 32px;
-		font-weight: 500;
-		div[class^="tk-"] {
+		font-weight: 700;
+		.tk-effra {
 			font-size: 30px !important;
 		}
 	}
