@@ -5,7 +5,7 @@
   {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
 
   <title>{{ block "title" . }}
-    {{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}
+    {{ .Site.Title -}}
     {{ end }}</title>
 
     {{ range .AlternativeOutputFormats }}

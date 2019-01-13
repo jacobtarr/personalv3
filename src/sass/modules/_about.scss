@@ -153,14 +153,15 @@
 	}
 
 	.feature-icon {
-		max-width: 120px;
-		width: 100%;
+		min-width: 80px;
+		width: 80px;
 	}
 
 	.feature {
 		&--finishing-touches {
 			.feature-icon {
-				max-width: 120px;
+				min-width: 80px;
+				width: 80px;
 			}
 		}
 	}
