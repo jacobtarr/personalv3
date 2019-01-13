@@ -220,13 +220,16 @@
   }
 
   .work-main-slide {
+    justify-content: center;
     flex-wrap: wrap;
   }
 
   .work-main-slide__img {
     margin-right: 0;
+    max-width: 300px;
     + .work-main-slide__info {
       margin-top: 20px;
+      flex: auto;
     }
   }
 

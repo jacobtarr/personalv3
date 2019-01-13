@@ -86,7 +86,7 @@
 .callout-photo {
 	width: 170px;
 	height: 170px;
-	border: 3px solid $jt-black;
+	border: 5px solid $jt-black;
 	border-radius: 50%;
 	margin: auto;
 	> img {
@@ -165,6 +165,12 @@
 
 	.callout-box__bottom {
 		font-size: 18px;
+	}
+
+	.callout-photo {
+		width: 150px;
+		height: 150px;
+		border: 3px solid $jt-black;
 	}
 
 }

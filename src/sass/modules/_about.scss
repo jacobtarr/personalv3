@@ -157,6 +157,14 @@
 		width: 100%;
 	}
 
+	.feature {
+		&--finishing-touches {
+			.feature-icon {
+				max-width: 120px;
+			}
+		}
+	}
+
 	.feature-info {
 		margin-left: 15px;
 		text-align: left;

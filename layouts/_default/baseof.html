@@ -17,14 +17,14 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   </head>
-  <body>
+  <body style="position: relative;" data-spy="scroll" data-target="#navbar-wrapper">
 
     <div id="site-wrapper">
 
       {{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
 
 
-      <main class="main-content" data-spy="scroll" data-target="#" data-offset="0">
+      <main class="main-content">
         {{ block "main" . }}{{ end }}
       </main>
 
